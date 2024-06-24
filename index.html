@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html speech="on">
+<head>
+    <title>learn math</title>
+<style>
+  h2 {color: blue;
+  font-style: normal;
+    margin-right: auto;
+margin-bottom: 20px;  }
+  /* Copyright notice at the bottom */
+  #copyright {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+text-align:left;
+padding: 8px 4px;
+}
+#copyright p {
+	font-size: 16px;
+	color:#514A80;
+}
+#copyright a {
+	color:#514A80;
+}
+ /* Copyright notice should be at the bottom */
+ img{border-radius: 100px;
+width: 200px;
+height: 200px;
+border: none;
+  cursor: pointer;  }
+  button{background-color: red;
+  color: antiquewhite;
+  border: none;
+ height: 40px;
+ border-radius: 10px;
+ margin-top: 20px;
+ margin-left: 30px;
+ border-style: solid;
+ cursor: pointer;
+ width: 100px;}
+a{background-color: red;
+  
+  border: none;
+ height: 40px;
+ border-radius: 10px;
+ 
+ 
+ cursor: pointer;
+ }
+ 
+ .href {
+  width: 70px;
+  height: 30px;
+  background: red;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+  text-align: center;
+  padding-top: 4px;
+}
+
+/* For Safari 3.1 to 6.0 */
+.href {-webkit-transition-timing-function: linear;}
+
+/* Standard syntax */
+.href {transition-timing-function: linear;}
+.href:hover{
+  width: 140px;
+
+}
+  </style>                                                                                                                                                 
+
+<body style="background-color: rgba(169, 174, 238, 0.37);">
+<form>
+  <div>
+    <h2><label for="fname">first name:</label></h2>
+  <input type="text" id="fname" name="fname" placeholder="your first name"required>
+  </div>
+  <div>
+   <h2><label for="lname">last name:</label></h2>
+    <input type="text" id="lname" name="lname" placeholder="your last name" required>
+    <br>
+    <div>
+      <h2><label for="password">Password:</label></h2>
+      <input type="password" name="password" id="password" placeholder="************" required>
+      <br>
+    </div>
+    <div>
+      <h2>
+        <label for="email">Email</label>
+      </h2>
+      <input type="email" name="email" id="email" placeholder="example123@gmail.com" required>
+    </div>
+    <br>
+    <input type="submit" value="submit" onclick="myfunction()" class="href">
+</form>
+
+
+<h2></h2> 
+</div>      
+</div>
+<div class="clear"></div>
+<footer><div id="copyright">
+  <p class="floatleft">© 2023 lawal daniel adebola. All rights reserved.</p>
+  <p class="floatright" id="username"></p>
+</div>
+</div></footer>
+<script>
+  function myfunction(){
+  document.getElementById('fname').innerHTML = fname
+  let usernameinput = document.getElementById("fname");
+  let username=usernameinput.value
+
+  var content = username
+  var display;
+  if (content == " " ) {
+    display = "input your name"
+  }
+  else {
+    display = username
+  }
+ }
+
+  document.getElementById("username").innerHTML = "welcome" + display + "!"
+</script>
+</body>
+</html>
